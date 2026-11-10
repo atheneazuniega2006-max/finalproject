@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuniega_final</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#slider">
+            Athenea's Sweet Cakes
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu">
+            <i class="fa fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link active" href="#slider">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">Our Cakes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Order Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="slider" id="slider">
+    <div class="slider-overlay">
+        <div class="slider-content">
+            <div class="icons">
+                <i class="fa fa-birthday-cake"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-gift"></i>
+            </div>
+            <div class="text">
+                <h1>We bake <span class="primary" id="typed">chocolate cakes</span></h1>
+                <p>Handmade cakes for birthdays, weddings and every sweet day in between.</p>
+            </div>
+            <div class="cta-div">
+                <a href="#work" class="btnl">See our cakes</a>
+                <a href="#contact" class="btnl">Order a cake</a>
+            </div>
+            <div class="social-networks">
+                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-area" id="services">
+    <div class="container text-center">
+        <div class="animated-text">
+            <h2>WHAT WE DO</h2>
+            <p>Every cake is baked to order with real butter and fresh ingredients.</p>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4"><div class="service-wrap">
+                <div class="service-icon"><i class="fa fa-birthday-cake"></i></div>
+                <h3>Birthday Cakes</h3><p>Custom flavors, colors and toppers for your celebration.</p></div></div>
+            <div class="col-md-4"><div class="service-wrap">
+                <div class="service-icon"><i class="fa fa-heart"></i></div>
+                <h3>Wedding Cakes</h3><p>Cakes that made to match your theme.</p></div></div>
+            <div class="col-md-4"><div class="service-wrap">
+                <div class="service-icon"><i class="fa fa-gift"></i></div>
+                <h3>Boxes Style</h3><p>please input what you like at the message box.</p></div></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about-area" id="about">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-md-5">
+                
+                <img src="img/bg.jpg" alt="The baker" class="about-photo">
+            </div>
+            <div class="col-md-7">
+                <h2>ABOUT US</h2>
+                <p>We started baking birthday cakes for family and friends and never stopped.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="work" id="work">
+    <div class="container">
+        <div class="text-center">
+            <h2>OUR CAKES</h2>
+            <p>Hover over a cake to see its price.</p>
+        </div>
+        <div class="cake-grid">
+            <div class="item"><div class="cake-tile">
+                
+                <img src="img/cake1.jpg" alt="Triple Chocolate">
+                <div class="info"><h3>Triple Chocolate</h3><p class="price">from ₱1,800</p><a href="#contact" class="btnl" data-cake="Triple Chocolate">Order this</a></div></div></div>
+            <div class="item"><div class="cake-tile">
+    
+                <img src="img/cake2.jpg" alt="Strawberry Cloud">
+                <div class="info"><h3>Strawberry Cloud</h3><p class="price">from ₱1,600</p><a href="#contact" class="btnl" data-cake="Strawberry Cloud">Order this</a></div></div></div>
+            <div class="item"><div class="cake-tile">
+                
+                <img src="img/cake3.jpg" alt="Pistachio Rose">
+                <div class="info"><h3>Pistachio Rose</h3><p class="price">from ₱4,500</p><a href="#contact" class="btnl" data-cake="Pistachio Rose">Order this</a></div></div></div>
+            <div class="item"><div class="cake-tile">
+                <img src="img/cake4.jpg" alt="Lemon Drizzle">
+                <div class="info"><h3>Lemon Drizzle</h3><p class="price">from ₱900</p><a href="#contact" class="btnl" data-cake="Lemon Drizzle">Order this</a></div></div></div>
+            <div class="item"><div class="cake-tile">
+            
+                <img src="img/cake5.jpg" alt="Ube Cheesecake">
+                <div class="info"><h3>Ube Cheesecake</h3><p class="price">from ₱1,200</p><a href="#contact" class="btnl" data-cake="Ube Cheesecake">Order this</a></div></div></div>
+            <div class="item"><div class="cake-tile">
+                
+                <img src="img/cake6.jpg" alt="Mango Float Cake">
+                <div class="info"><h3>Mango Float Cake</h3><p class="price">from ₱1,400</p><a href="#contact" class="btnl" data-cake="Mango Float Cake">Order this</a></div></div></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="faq-area" id="faq">
+    <div class="container">
+        <h2 class="text-center mb-4">QUESTIONS</h2>
+        <div class="accordion mx-auto" id="accordion" style="max-width:700px">
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">How early should I order?</button></h3>
+                <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#accordion"><div class="accordion-body">Order at least 3 days ahead. Wedding cakes need 2 weeks.</div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">Do you deliver?</button></h3>
+                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#accordion"><div class="accordion-body">Yes, within the city. The delivery fee depends on distance.</div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">Can you make a custom design?</button></h3>
+                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#accordion"><div class="accordion-body">Yes. Send a photo or describe your idea in the order form.</div></div></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="stat">
+    <div class="container text-center stat-items">
+        <div class="row">
+            <div class="col-md-4"><i class="fa fa-birthday-cake"></i><h2 class="count" data-to="1200">0</h2><p>CAKES BAKED</p></div>
+            <div class="col-md-4"><i class="fa fa-smile-o"></i><h2 class="count" data-to="800">0</h2><p>HAPPY CUSTOMERS</p></div>
+            <div class="col-md-4"><i class="fa fa-star"></i><h2 class="count" data-to="35">0</h2><p>FLAVORS</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-area" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">ORDER A CAKE</h2>
+        <form id="orderForm" class="mx-auto" novalidate style="max-width:560px">
+            <input id="name" class="form-control mb-3" placeholder="Your name">
+            <input id="email" type="email" class="form-control mb-3" placeholder="Email">
+            <select id="cakeSelect" class="form-select mb-3" aria-label="Cake">
+                <option>Triple Chocolate</option><option>Strawberry Cloud</option><option>Pistachio Rose</option>
+                <option>Lemon Drizzle</option><option>Ube Cheesecake</option><option>Mango Float Cake</option>
+            </select>
+            <textarea id="notes" class="form-control mb-3" rows="4" placeholder="Date, size, message on the cake..."></textarea>
+            <button class="btnl btnn border-0" type="submit">Send order</button>
+            <p id="formMsg" class="text-center mt-3" role="status"></p>
+        </form>
+        <div class="row contact-infos text-center">
+            <div class="col-md-4"><i class="fa fa-map-marker"></i><p>Alangilan,Sta.Catalina</p></div>
+            <div class="col-md-4"><i class="fa fa-phone"></i><p>+63 9771456789</p></div>
+            <div class="col-md-4"><i class="fa fa-envelope"></i><p>atheneas@sweetcakes.com</p></div>
+        </div>
+    </div>
+</section>
+
+<footer>&copy; 2026 Sweet Cakes. All rights reserved.</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/jquery.ripples.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

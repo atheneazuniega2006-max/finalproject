@@ -1,0 +1,89 @@
+html{scroll-behavior:smooth;background:linear-gradient(135deg,#ffd6e4,#ffb8d1 50%,#ffe3ec) fixed}
+
+body{
+    margin:0;padding:0;
+    font-family:Arial,Helvetica,sans-serif;
+    /* Put your picture at img/pinkS.jpeg. Until then the pink gradient on html shows. */
+    background-image:url("../img/back.jpg");
+    background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat;
+    color:#222;
+}
+
+
+.navbar{background-color:transparent!important;transition:background-color .4s ease,box-shadow .4s ease}
+.navbar.scrolled{background-color:rgb(235,18,54)!important;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.navbar .navbar-brand{color:#fff!important;letter-spacing:3px}
+.navbar .nav-link{color:rgba(255,255,255,.75)!important;transition:color .3s ease}
+.navbar .nav-link.active,.navbar .nav-link:hover{color:#fff!important}
+.navbar .navbar-toggler{border-color:rgba(255,255,255,.5)}
+.navbar .nav-item:last-child .nav-link{border:1px solid rgba(255,255,255,.7);border-radius:30px;padding:8px 16px;color:#fff!important;transition:.3s ease}
+.navbar .nav-item:last-child .nav-link:hover{background-color:#fff;color:#e40c63!important}
+@media(max-width:991px){.navbar-collapse{background:rgb(235,18,54);padding:1rem;border-radius:10px;margin-top:.5rem}}
+
+
+.slider{width:100%;min-height:700px;position:relative;overflow:hidden}
+.slider-overlay{width:100%;min-height:700px;display:flex;justify-content:center;align-items:center}
+.slider-content{width:100%;text-align:center;padding:0 15px}
+.icons{margin-bottom:30px}
+.icons i{font-size:50px;margin:0 15px;color:rgb(238,12,181)}
+.text h1{font-size:45px;font-weight:bold;text-transform:uppercase;color:#222}
+.text p{font-size:20px}
+.primary,.typed-cursor{color:rgb(255,60,0)}
+.typed-cursor{opacity:1;animation:blink .7s infinite}
+@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}
+.cta-div{margin-top:25px}
+.btnl{display:inline-block;padding:12px 25px;margin:5px;background-color:#e40c63;color:#fff;text-decoration:none;border-radius:5px;transition:.3s ease;cursor:pointer}
+.btnl:hover{background-color:#34495e;color:#fff}
+.social-networks{margin-top:25px}
+.social-networks a{display:inline-flex;justify-content:center;align-items:center;width:45px;height:45px;margin:5px;color:#222;text-decoration:none;border:1px solid #222;border-radius:50%;transition:.3s ease}
+.social-networks a:hover{background-color:rgb(255,55,0);border-color:rgb(255,55,0);color:#fff}
+h2{font-weight:700;letter-spacing:3px}
+
+
+.service-area{width:100%;padding:100px 0}
+.service-wrap{box-shadow:0 0 10px rgba(0,0,0,.2);overflow:hidden;padding:25px 35px;position:relative;transition:all .5s ease;z-index:9;margin-top:20px}
+.service-wrap::before,.service-wrap::after{content:"";height:300%;position:absolute;transform:rotate(45deg);width:120%;z-index:-9;transition:all .5s;opacity:0;background:#34495e}
+.service-wrap::before{top:-37px;left:100%}
+.service-wrap:hover::before{left:-27px;opacity:1}
+.service-wrap::after{right:100%;bottom:-37px}
+.service-wrap:hover::after{right:-27px;opacity:1}
+.service-wrap:hover{color:#fff}
+.service-wrap h3{font-size:1.4rem}
+.service-icon i{font-size:30px;margin-bottom:20px;transition:all .5s}
+.service-wrap:hover .service-icon i{transform:rotate(360deg)}
+
+
+.work{width:100%;padding:100px 0;overflow:hidden}
+.cake-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.cake-tile{position:relative;height:240px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(160deg,var(--top),var(--a));box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.cake-tile>img{width:100%;height:100%;object-fit:cover}
+.cake-tile .info{position:absolute;inset:0;background:rgba(52,73,94,.92);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transform:scale(.8);transition:all .5s}
+.cake-tile:hover .info{opacity:1;transform:scale(1)}
+.info h3{font-size:1.3rem}
+.price{color:#ffb8d1;font-weight:bold}
+@media(max-width:991px){.cake-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:575px){.cake-grid{grid-template-columns:1fr}}
+
+.about-area{padding:100px 0 20px}
+.about-photo{width:100%;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+
+
+.faq-area{padding:60px 0}
+.accordion-button:not(.collapsed){background:#e40c63;color:#fff}
+
+
+.stat{background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.2)),linear-gradient(135deg,#e40c63,#ff7a59);background-attachment:fixed;padding:160px 0;color:#fff;margin-top:60px}
+.stat i{font-size:70px}
+.stat-items h2{font-weight:bolder;font-size:42px;color:#fff59d;margin-top:10px}
+.stat p{font-weight:bold;letter-spacing:1px}
+
+
+.contact-area{padding:80px 0 40px}
+.contact-infos{margin-top:70px}
+.contact-infos i{font-size:35px;color:#e40c63;margin-bottom:12px}
+#formMsg.error{color:#b00020}
+footer{background:rgb(235,18,54);color:#fff;text-align:center;padding:25px}
+
+@media(max-width:600px){.text h1{font-size:32px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
